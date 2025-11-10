@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Delicious | Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Indian <span>Delicious</span></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>                     
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">₹0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Payment</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        Item added to cart successfully!
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>From Our Kitchen to Your Heart</h1>
+            <p>Our chefs bring generations of culinary mastery to your plate—infusing each dish with warmth, spice, and the soul of India..</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn">Explore Our Menu</a>
+                <a href="#contact" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="restaurant-interior.png" alt="Restaurant Interior">
+            </div>
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2005, Indian Delicious brings the authentic flavors of India to your table. Our chefs, trained in the culinary traditions of North and South India, create dishes that honor India's diverse gastronomic heritage.</p>
+                <p>We source the finest spices and ingredients, from Kashmiri saffron to Kerala black pepper, ensuring every dish captures the true essence of Indian cuisine.</p>
+                <p>At Indian Delicious, we believe that a great meal is more than just food - it's an experience that brings people together and creates lasting memories.</p>
+                <a href="#contact" class="btn">Visit Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Specialties</h2>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dine In</h3>
+                    <p>Enjoy our authentic Indian dishes in our cozy, vibrant atmosphere perfect for any occasion.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Delivery</h3>
+                    <p>Have our delicious food delivered right to your door with our fast delivery service.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Takeaway</h3>
+                    <p>Order ahead and pick up your favorite dishes for a convenient meal at home.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Make your events special with our catering services for parties and corporate events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>The best Indian food I've had outside of India! The butter chicken was perfectly creamy and the naan was fresh from the tandoor. I'll definitely be back!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="customer1.png" alt="Priya Sharma">
+                        </div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>We had our anniversary dinner here and it was magical. The ambiance, service, and food were all exceptional. The biryani was to die for!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="customer2.png" alt="Raj Patel">
+                        </div>
+                        <div>
+                            <h4>Raj Patel</h4>
+                            <p>First Time Visitor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Spice Street, Curry District<br>Mumbai, MH 400001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@indiandelicious.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Thursday: 11am - 10pm<br>Friday - Saturday: 11am - 11pm<br>Sunday: 12pm - 9pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Number of Guests" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Special Requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section" id="paymentSection">
+        <div class="container">
+            <div class="payment-container">
+                <div class="payment-header">
+                    <h2>Complete Your Payment</h2>
+                    <p>Order Total: <span id="paymentTotal">₹0.00</span></p>
+                </div>
+                <div class="payment-body">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method" data-method="upi">
+                            <div class="payment-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>UPI</h4>
+                        </div>
+                        <div class="payment-method" data-method="card">
+                            <div class="payment-icon">
+                                <i class="far fa-credit-card"></i>
+                            </div>
+                            <h4>Credit/Debit Card</h4>
+                        </div>
+                        <div class="payment-method" data-method="netbanking">
+                            <div class="payment-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Net Banking</h4>
+                        </div>
+                        <div class="payment-method" data-method="wallet">
+                            <div class="payment-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h4>Wallet</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- UPI Payment Details -->
+                    <div class="payment-details" id="upiDetails">
+                        <div class="payment-info">
+                            <p>Pay using any UPI app like Google Pay, PhonePe, Paytm, etc.</p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="upi-qr.png" alt="UPI QR Code">
+                            <p>Scan this QR code with your UPI app</p>
+                        </div>
+                        <div class="upi-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Enter UPI ID (e.g. name@upi)" id="upiId">
+                            </div>
+                        </div>
+                        <div class="payment-actions">
+                            <button class="payment-btn back" id="backToCart">Back to Cart</button>
+                            <button class="payment-btn" id="payWithUpi">Pay Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Payment Details -->
+                    <div class="payment-details" id="cardDetails">
+                        <div class="payment-info">
+                            <p>Pay using your credit or debit card</p>
+                        </div>
+                        <div class="card-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Card Number" id="cardNumber">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Cardholder Name" id="cardName">
+                            </div>
+                            <div class="card-row">
+                                <div class="form-group">
+                                    <input type="text" placeholder="MM/YY" id="cardExpiry">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="CVV" id="cardCvv">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-actions">
+                            <button class="payment-btn back" id="backToCartCard">Back to Cart</button>
+                            <button class="payment-btn" id="payWithCard">Pay Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Net Banking Details -->
+                    <div class="payment-details" id="netbankingDetails">
+                        <div class="payment-info">
+                            <p>Select your bank for payment</p>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="bankSelect">
+                                <option value="">Select your bank</option>
+                                <option value="sbi">State Bank of India</option>
+                                <option value="hdfc">HDFC Bank</option>
+                                <option value="icici">ICICI Bank</option>
+                                <option value="axis">Axis Bank</option>
+                                <option value="pnb">Punjab National Bank</option>
+                                <option value="kotak">Kotak Mahindra Bank</option>
+                            </select>
+                        </div>
+                        <div class="payment-actions">
+                            <button class="payment-btn back" id="backToCartNet">Back to Cart</button>
+                            <button class="payment-btn" id="payWithNet">Pay Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Wallet Details -->
+                    <div class="payment-details" id="walletDetails">
+                        <div class="payment-info">
+                            <p>Pay using your digital wallet</p>
+                        </div>
+                        <div class="wallet-options">
+                            <div class="payment-method wallet-option" data-wallet="googlepay">
+                                <div class="payment-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Google Pay</h4>
+                            </div>
+                            <div class="payment-method wallet-option" data-wallet="phonepe">
+                                <div class="payment-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>PhonePe</h4>
+                            </div>
+                            <div class="payment-method wallet-option" data-wallet="paytm">
+                                <div class="payment-icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <h4>Paytm</h4>
+                            </div>
+                        </div>
+                        <div class="payment-actions">
+                            <button class="payment-btn back" id="backToCartWallet">Back to Cart</button>
+                            <button class="payment-btn" id="payWithWallet">Pay Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Payment Success -->
+                    <div class="payment-details" id="paymentSuccess">
+                        <div class="payment-success">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Payment Successful!</h3>
+                            <p>Thank you for your order. Your food will be prepared shortly.</p>
+                            <p>Order ID: <strong>ID2023<span id="orderId"></span></strong></p>
+                            <button class="payment-btn" id="continueShopping">Continue Shopping</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Indian Delicious</h3>
+                    <p>Authentic Indian cuisine made with passion and the finest spices since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul class="footer-links">
+                        <li>Monday - Thursday: 11am - 10pm</li>
+                        <li>Friday - Saturday: 11am - 11pm</li>
+                        <li>Sunday: 12pm - 9pm</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Spice Street, Mumbai 400001</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@indiandelicious.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Indian Delicious. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
